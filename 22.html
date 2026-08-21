@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Massinha de modelar: o que ela desenvolve e 5 atividades para fazer hoje</title>
+<meta name="description" content="Por que a massinha é uma das ferramentas mais completas para a primeira infância, o que ela trabalha em cada idade e 5 atividades prontas para fazer em casa hoje.">
+<meta name="robots" content="index, follow">
+
+<!-- ================================================================
+     CONFIGURAÇÃO RÁPIDA
+     Troque o link de destino em UMA linha só (const DESTINO, no fim do arquivo).
+     Cole a tag do Google Ads / GA4 logo abaixo deste comentário.
+     ================================================================ -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Figtree:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --papel:#F6F2FB;
+  --branco:#FFFFFF;
+  --tinta:#241C3A;
+  --tinta-suave:#5A5175;
+  --uva:#6C4DE0;
+  --coral:#FF6B5A;
+  --limao:#FFD24A;
+  --menta:#3FC1A0;
+  --linha:#E4DCF2;
+  --raio:26px;
+  --display:"Baloo 2", "Trebuchet MS", system-ui, sans-serif;
+  --corpo:"Figtree", -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--papel);
+  color:var(--tinta);
+  font-family:var(--corpo);
+  font-size:18px;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{width:100%;max-width:720px;margin:0 auto;padding:0 20px}
+
+/* ---------- topo ---------- */
+.topo{
+  background:var(--branco);
+  border-bottom:2px solid var(--linha);
+  padding:14px 0;
+}
+.topo .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.marca{
+  font-family:var(--display);font-weight:800;font-size:19px;
+  letter-spacing:-.01em;color:var(--uva);text-decoration:none;line-height:1.1;
+}
+.marca span{display:block;font-size:11px;font-family:var(--corpo);font-weight:500;
+  color:var(--tinta-suave);letter-spacing:.14em;text-transform:uppercase}
+.topo-link{
+  font-size:14px;font-weight:700;color:var(--tinta);text-decoration:none;
+  border-bottom:2px solid var(--limao);padding-bottom:1px;white-space:nowrap;
+}
+
+/* ---------- hero ---------- */
+header.hero{padding:38px 0 8px}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--uva);background:#EDE6FF;border-radius:100px;padding:6px 14px;margin:0 0 18px;
+}
+h1{
+  font-family:var(--display);font-weight:800;font-size:clamp(30px,7.4vw,44px);
+  line-height:1.12;letter-spacing:-.02em;margin:0 0 6px;
+}
+.rolinho{display:block;width:180px;max-width:60%;height:14px;margin:2px 0 18px;overflow:visible}
+.lead{font-size:20px;color:var(--tinta-suave);margin:0 0 26px;line-height:1.55}
+
+/* ---------- texto ---------- */
+main{padding-bottom:10px}
+h2{
+  font-family:var(--display);font-weight:800;font-size:clamp(24px,5.4vw,31px);
+  line-height:1.2;letter-spacing:-.015em;margin:44px 0 14px;
+}
+h3{font-family:var(--display);font-weight:700;font-size:20px;margin:0 0 4px;line-height:1.25}
+p{margin:0 0 18px}
+strong{font-weight:700}
+
+/* ---------- o que trabalha ---------- */
+.habilidades{list-style:none;margin:22px 0 8px;padding:0;display:grid;gap:12px}
+@media(min-width:560px){.habilidades{grid-template-columns:1fr 1fr}}
+.habilidades li{
+  background:var(--branco);border:2px solid var(--linha);border-radius:var(--raio);
+  padding:16px 18px;display:flex;gap:13px;align-items:flex-start;
+}
+.blob{
+  flex:0 0 auto;width:30px;height:30px;margin-top:2px;
+  border-radius:58% 42% 47% 53% / 45% 55% 45% 55%;
+}
+.b1{background:var(--coral)} .b2{background:var(--limao)}
+.b3{background:var(--menta)} .b4{background:var(--uva)}
+.b5{background:#F58BC0} .b6{background:#5BB8E8}
+.habilidades b{display:block;font-family:var(--display);font-weight:700;font-size:17px}
+.habilidades span{font-size:15px;color:var(--tinta-suave);line-height:1.45}
+
+/* ---------- atividades ---------- */
+.atividade{
+  background:var(--branco);border:2px solid var(--linha);border-radius:var(--raio);
+  padding:22px;margin:0 0 16px;position:relative;
+}
+.idade{
+  display:inline-block;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--tinta);background:var(--limao);border-radius:100px;padding:4px 11px;margin:0 0 10px;
+}
+.atividade p{margin:0;font-size:16.5px;line-height:1.6}
+.atividade p + p{margin-top:10px}
+.trabalha{
+  display:block;margin-top:12px;padding-top:12px;border-top:2px dashed var(--linha);
+  font-size:14px;color:var(--tinta-suave);
+}
+.trabalha b{color:var(--tinta)}
+
+/* ---------- receita ---------- */
+.receita{
+  background:#EDE6FF;border-radius:var(--raio);padding:24px;margin:26px 0;
+}
+.receita h3{margin-bottom:10px}
+.receita ul{margin:0 0 12px;padding-left:20px;font-size:16.5px}
+.receita li{margin-bottom:5px}
+.receita p{font-size:16.5px;margin:0}
+
+/* ---------- aviso ---------- */
+.aviso{
+  border-left:6px solid var(--coral);background:var(--branco);
+  border-radius:0 16px 16px 0;padding:16px 18px;margin:26px 0;font-size:16px;
+}
+.aviso p{margin:0;color:var(--tinta-suave)}
+
+/* ---------- oferta ---------- */
+.oferta{
+  background:var(--branco);border:3px solid var(--tinta);border-radius:30px;
+  padding:28px 22px;margin:34px 0 20px;
+}
+.oferta .eyebrow{background:var(--menta);color:#0C3B30}
+.oferta h2{margin:0 0 10px;font-size:clamp(23px,5.2vw,29px)}
+.oferta p{font-size:17px}
+.passos{list-style:none;margin:20px 0;padding:0;display:grid;gap:10px}
+.passos li{display:flex;gap:12px;align-items:center;font-size:16.5px;font-weight:500}
+.num{
+  flex:0 0 auto;width:30px;height:30px;border-radius:50%;background:var(--uva);color:#fff;
+  font-family:var(--display);font-weight:700;font-size:16px;
+  display:flex;align-items:center;justify-content:center;
+}
+.cta{
+  display:block;text-align:center;background:var(--coral);color:#fff;text-decoration:none;
+  font-family:var(--display);font-weight:800;font-size:20px;letter-spacing:.01em;
+  padding:18px 20px;border-radius:100px;margin:22px 0 10px;
+  box-shadow:0 5px 0 #D9483A;transition:transform .12s ease, box-shadow .12s ease;
+}
+.cta:hover,.cta:focus{transform:translateY(2px);box-shadow:0 3px 0 #D9483A}
+.cta:focus-visible{outline:3px solid var(--uva);outline-offset:3px}
+.sob-cta{text-align:center;font-size:14px;color:var(--tinta-suave);margin:0}
+
+/* ---------- faq ---------- */
+details{
+  background:var(--branco);border:2px solid var(--linha);border-radius:18px;
+  padding:14px 18px;margin-bottom:10px;
+}
+summary{
+  cursor:pointer;font-family:var(--display);font-weight:700;font-size:17px;
+  list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center;
+}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--uva);font-size:24px;line-height:1}
+details[open] summary::after{content:"–"}
+details p{margin:10px 0 2px;font-size:16px;color:var(--tinta-suave)}
+
+/* ---------- rodapé ---------- */
+footer{
+  background:var(--branco);border-top:2px solid var(--linha);
+  margin-top:44px;padding:28px 0 34px;font-size:14px;color:var(--tinta-suave);
+}
+footer p{margin:0 0 8px;line-height:1.55}
+footer a{color:var(--tinta-suave)}
+.legal{font-size:12.5px;margin-top:14px;line-height:1.5}
+
+@media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+
+<div class="topo">
+  <div class="wrap">
+    <a class="marca" href="/">Aprendendo Brincando<span>Conteúdo para pais e educadores</span></a>
+    <a class="topo-link" href="#kit" data-cta-suave>Ver o kit</a>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Primeira infância · 5 min de leitura</p>
+    <h1>A massinha faz mais pelo seu filho do que parece</h1>
+    <svg class="rolinho" viewBox="0 0 180 14" aria-hidden="true">
+      <path d="M6 8 C 38 -1, 62 13, 92 6 S 148 12, 174 6" fill="none"
+            stroke="#FFD24A" stroke-width="11" stroke-linecap="round"/>
+    </svg>
+    <p class="lead">Apertar, rolar e amassar parece só bagunça. Mas é um dos exercícios mais completos que uma criança de 2 a 10 anos pode fazer — e prepara a mão dela para escrever.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <p>Toda mãe já viveu esta cena: a criança pede alguma coisa para fazer, você olha em volta, não tem ideia nenhuma na cabeça, e a tela acaba resolvendo o problema em dez segundos.</p>
+
+  <p>O ponto é que a alternativa não precisa ser complicada. Um dos materiais mais estudados na educação infantil custa pouco, cabe numa gaveta e você provavelmente já tem em casa: a massinha de modelar.</p>
+
+  <h2>O que a massinha trabalha de verdade</h2>
+
+  <p>Quando a criança rola, belisca e aperta a massa, ela está fortalecendo os músculos pequenos da mão e do punho — os mesmos que depois vão segurar o lápis. Terapeutas ocupacionais usam esse tipo de atividade justamente por isso. Mas o ganho não para na mão:</p>
+
+  <ul class="habilidades">
+    <li><span class="blob b1"></span><div><b>Coordenação motora fina</b><span>Movimento de pinça, força de preensão e controle do traço.</span></div></li>
+    <li><span class="blob b2"></span><div><b>Foco e concentração</b><span>Uma tarefa com começo, meio e fim, no ritmo da criança.</span></div></li>
+    <li><span class="blob b3"></span><div><b>Criatividade</b><span>Material sem resposta certa: dá para desfazer e recomeçar.</span></div></li>
+    <li><span class="blob b4"></span><div><b>Raciocínio lógico</b><span>Comparar tamanhos, contar, separar por cor e forma.</span></div></li>
+    <li><span class="blob b5"></span><div><b>Regulação emocional</b><span>Amassar descarrega tensão e acalma em dias agitados.</span></div></li>
+    <li><span class="blob b6"></span><div><b>Autonomia</b><span>Ela consegue fazer sozinha, do começo ao fim.</span></div></li>
+  </ul>
+
+  <h2>5 atividades para fazer hoje</h2>
+
+  <p>Nada aqui precisa de material caro. Uma folha de papel, uma caneta e a massinha resolvem.</p>
+
+  <div class="atividade">
+    <span class="idade">2 a 4 anos</span>
+    <h3>Fábrica de bolinhas</h3>
+    <p>Peça para a criança fazer dez bolinhas do mesmo tamanho e alinhar todas numa fileira. Depois, dez menores. Simples assim.</p>
+    <span class="trabalha"><b>Trabalha:</b> movimento de pinça, noção de tamanho e contagem.</span>
+  </div>
+
+  <div class="atividade">
+    <span class="idade">3 a 6 anos</span>
+    <h3>Cobrindo o próprio nome</h3>
+    <p>Escreva o nome dela numa folha com letras bem grandes e ocas. A tarefa é fazer rolinhos finos de massinha e cobrir cada letra por cima do traço.</p>
+    <p>É o mesmo caminho que a mão vai percorrer quando ela começar a escrever — só que sem a frustração do lápis.</p>
+    <span class="trabalha"><b>Trabalha:</b> reconhecimento de letras e preparação para a escrita.</span>
+  </div>
+
+  <div class="atividade">
+    <span class="idade">2 a 5 anos</span>
+    <h3>Caça ao tesouro</h3>
+    <p>Esconda tampinhas ou botões grandes dentro de bolas de massinha e entregue para a criança. Ela precisa apertar, cavar e abrir a massa até achar todos.</p>
+    <span class="trabalha"><b>Trabalha:</b> força das mãos e persistência. Use objetos grandes e fique por perto.</span>
+  </div>
+
+  <div class="atividade">
+    <span class="idade">4 a 7 anos</span>
+    <h3>Preencher as formas</h3>
+    <p>Desenhe um quadrado, um triângulo e um círculo grandes na folha. A criança preenche cada um por dentro, sem deixar a massinha ultrapassar a linha.</p>
+    <span class="trabalha"><b>Trabalha:</b> percepção visual, controle do traço e formas geométricas.</span>
+  </div>
+
+  <div class="atividade">
+    <span class="idade">4 a 8 anos</span>
+    <h3>As caras das emoções</h3>
+    <p>Peça para ela modelar um rosto feliz, um bravo e um triste. Depois pergunte quando foi a última vez que ela se sentiu daquele jeito.</p>
+    <p>É uma das formas mais fáceis de conversar sobre sentimento com criança pequena — porque ela mostra em vez de explicar.</p>
+    <span class="trabalha"><b>Trabalha:</b> vocabulário emocional e regulação.</span>
+  </div>
+
+  <div class="receita">
+    <h3>Massinha caseira em 5 minutos</h3>
+    <ul>
+      <li>1 xícara de farinha de trigo</li>
+      <li>1/2 xícara de sal</li>
+      <li>1 colher de sopa de óleo</li>
+      <li>1/2 xícara de água morna</li>
+      <li>Corante alimentício</li>
+    </ul>
+    <p>Misture tudo numa tigela e sove até desgrudar da mão. Guardada em pote fechado, dura cerca de duas semanas.</p>
+  </div>
+
+  <div class="aviso">
+    <p>Atividades com massinha pedem supervisão de um adulto. Evite peças pequenas com crianças que ainda levam objetos à boca.</p>
+  </div>
+
+  <h2>O problema não é a massinha</h2>
+
+  <p>É ter ideia nova todo santo dia.</p>
+
+  <p>A massinha funciona quando existe uma proposta por trás. Sem isso, a criança faz uma minhoca, faz uma bolinha e em cinco minutos larga tudo — e você volta à estaca zero, com a mesma sensação de que podia estar fazendo mais.</p>
+
+  <p>Foi exatamente por aí que surgiu o material abaixo.</p>
+
+  <section class="oferta" id="kit">
+    <p class="eyebrow">Material completo</p>
+    <h2>Kit Aprendendo Brincando com Massinha</h2>
+    <p>Um conjunto de atividades guiadas com massinha para crianças de 2 a 10 anos, prontas para imprimir. Cada folha já traz a proposta, a faixa etária e a habilidade que está sendo trabalhada — coordenação motora fina, foco, raciocínio lógico, percepção visual, autonomia e criatividade.</p>
+    <ul class="passos">
+      <li><span class="num">1</span> Escolha a atividade do dia</li>
+      <li><span class="num">2</span> Imprima a folha</li>
+      <li><span class="num">3</span> Entregue a massinha e pronto</li>
+    </ul>
+    <p>Compra única, acesso pelo e-mail e suporte no WhatsApp. Sem mensalidade.</p>
+    <a class="cta" href="#" data-cta>Ver o kit completo</a>
+    <p class="sob-cta">Você vai para a página com todos os detalhes e o valor.</p>
+  </section>
+
+  <h2>Perguntas frequentes</h2>
+
+  <details>
+    <summary>A partir de que idade dá para usar?</summary>
+    <p>As atividades acima cobrem de 2 a 10 anos. Abaixo dos 3, a criança precisa de supervisão o tempo todo e propostas mais simples, como amassar e rolar.</p>
+  </details>
+  <details>
+    <summary>Preciso comprar massinha industrializada?</summary>
+    <p>Não. A receita caseira desta página funciona igual e sai bem mais barata.</p>
+  </details>
+  <details>
+    <summary>Quanto tempo dura uma atividade dessas?</summary>
+    <p>Entre 10 e 25 minutos, dependendo da idade e do interesse. Criança pequena costuma sustentar menos tempo, e tudo bem.</p>
+  </details>
+  <details>
+    <summary>Isso substitui acompanhamento profissional?</summary>
+    <p>Não. São atividades de estímulo e brincadeira. Se você tem alguma preocupação com o desenvolvimento da criança, converse com o pediatra.</p>
+  </details>
+
+  <a class="cta" href="#" data-cta>Ver o kit completo</a>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Aprendendo Brincando com Massinha</strong></p>
+    <p>CNPJ 59.920.056/0001-07</p>
+    <p>Contato: <a href="mailto:suporte@minhavidaplanejada.com">suporte@minhavidaplanejada.com</a> · <a href="https://wa.me/5585992949987" rel="nofollow">WhatsApp</a></p>
+    <p><a href="https://www.aprendendobrincando-kitmassinha.com/termos-de-uso">Termos de uso</a> · <a href="https://www.aprendendobrincando-kitmassinha.com/pol%C3%ADtica-de-privacidade">Política de privacidade</a></p>
+    <p class="legal">Conteúdo informativo sobre atividades lúdicas para a primeira infância. Não substitui avaliação ou acompanhamento de profissionais de saúde e educação. Este site não é afiliado ao Google, ao Facebook ou a qualquer entidade dessas empresas.</p>
+    <p class="legal">© 2026 · Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script>
+/* ================================================================
+   TROQUE APENAS ESTA LINHA quando a página final estiver pronta.
+   ================================================================ */
+const DESTINO = "https://www.aprendendobrincando-kitmassinha.com/";
+
+/* Repassa gclid, wbraid e todas as UTMs da presell para a página de vendas,
+   para o rastreamento não quebrar no meio do caminho. */
+(function () {
+  var params = window.location.search;
+  var url = DESTINO;
+  if (params && params.length > 1) {
+    url += (DESTINO.indexOf("?") > -1 ? "&" : "?") + params.substring(1);
+  }
+  document.querySelectorAll("[data-cta]").forEach(function (el) {
+    el.setAttribute("href", url);
+  });
+})();
+</script>
+
+</body>
+</html>
