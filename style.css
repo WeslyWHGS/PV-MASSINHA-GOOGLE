@@ -96,8 +96,62 @@ ul {
   background: #ffffff;
 }
 
+.rating-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #e8e8e8;
+  border-radius: 40px;
+  padding: 6px 16px 6px 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+}
+
+.rating-badge__avatars {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.rating-badge__avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  margin-left: -10px;
+  object-fit: cover;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.rating-badge__avatar:first-child {
+  margin-left: 0;
+}
+
+.rating-badge__info {
+  text-align: left;
+}
+
+.rating-badge__stars {
+  display: block;
+  color: #ffb400;
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 1;
+  margin-bottom: 3px;
+}
+
+.rating-badge__text {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--dark);
+  line-height: 1.2;
+}
+
+.rating-badge__text strong {
+  font-weight: 800;
+}
+
 .hero__title {
-  font-size: clamp(28px, 8vw, 36px);
+  font-size: clamp(23px, 6.6vw, 29px);
   font-weight: 800;
   line-height: 1.25;
   color: var(--dark);
@@ -109,7 +163,7 @@ ul {
 }
 
 .hero__subtitle {
-  font-size: clamp(20px, 6vw, 24px);
+  font-size: clamp(16px, 4.6vw, 19px);
   color: var(--gray);
   font-weight: 500;
   max-width: 360px;
@@ -132,7 +186,7 @@ ul {
   border: 2px solid var(--pink);
   border-radius: 30px;
   padding: 10px 10px;
-  font-size: clamp(12px, 3.8vw, 15px);
+  font-size: clamp(10px, 3vw, 12px);
   font-weight: 700;
   color: var(--dark);
   background: #ffffff;
@@ -141,7 +195,7 @@ ul {
 }
 
 .pill__icon {
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1;
   flex-shrink: 0;
 }
@@ -595,24 +649,24 @@ ul {
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 20px;
-  padding: 26px 18px 20px;
+  padding: 20px 16px 20px 76px;
   text-align: center;
 }
 
 .perfect__icon {
   position: absolute;
-  top: -26px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 56px;
-  height: 56px;
-  border-radius: 16px;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
   background: rgba(255, 255, 255, 0.12);
   border: 1px solid rgba(255, 255, 255, 0.18);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 26px;
+  font-size: 22px;
   backdrop-filter: blur(4px);
 }
 
@@ -1043,6 +1097,11 @@ ul {
   padding: 30px 0 40px;
 }
 
+.cta-repeat {
+  background: #f5f5f6;
+  padding: 8px 0 40px;
+}
+
 .choice__final-highlight {
   background: var(--lime);
   padding: 2px 10px;
@@ -1127,4 +1186,117 @@ ul {
 
 .faq__answer li {
   margin-bottom: 4px;
+}
+
+/* ===== Rodapé / Termos e Privacidade ===== */
+.footer {
+  background: #19181f;
+  padding: 26px 0;
+  text-align: center;
+}
+
+.footer__copy {
+  color: #9a9a9f;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.footer__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.footer__links a {
+  color: #d3fb4f;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.footer__divider {
+  color: #5a5a60;
+  font-size: 13px;
+}
+
+.footer__contact {
+  color: #9a9a9f;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.footer__contact a {
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* ===== Páginas legais (Privacidade / Termos) ===== */
+.legal {
+  padding: 30px 0 50px;
+}
+
+.legal h1 {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--dark);
+  margin-bottom: 6px;
+}
+
+.legal__updated {
+  font-size: 13px;
+  color: var(--gray);
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.legal h2 {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--dark);
+  margin-top: 26px;
+  margin-bottom: 10px;
+}
+
+.legal p {
+  font-size: 15px;
+  color: #3a3a3a;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.legal ul {
+  margin: 0 0 12px 4px;
+  padding-left: 18px;
+  list-style: disc;
+}
+
+.legal li {
+  font-size: 15px;
+  color: #3a3a3a;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 6px;
+}
+
+.legal a {
+  color: var(--pink);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.legal__note {
+  margin-top: 30px;
+  padding: 14px 16px;
+  background: #fff8e6;
+  border: 1px solid #f0dca0;
+  border-radius: 10px;
+  font-size: 13px;
+  color: #7a6120;
+  font-style: italic;
 }
